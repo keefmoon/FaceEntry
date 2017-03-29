@@ -1,0 +1,1 @@
+../../../ProjectOxfordFace/Pod/Classes/MPOFaceMetadata.h
