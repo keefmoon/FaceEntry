@@ -8,6 +8,7 @@
 
 import UIKit
 
-class IdentifyViewController: UIViewController {
+class IdentifyViewController: VideoCaptureViewController {
+    
     
 }

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -77,12 +78,43 @@
                     <view key="view" contentMode="scaleToFill" id="ajd-bl-U7P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIN-ie-8XS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpn-9A-3xn">
+                                <rect key="frame" x="268" y="36" width="75" height="42"/>
+                                <color key="backgroundColor" red="0.46677093749999998" green="0.57827217470000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Qfo-d7-aE7"/>
+                                    <constraint firstAttribute="height" constant="42" id="g4i-Oy-Rg4"/>
+                                </constraints>
+                                <state key="normal" title="Admin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="adminButtonPressedWithSender:" destination="Wki-UB-W1Z" eventType="touchUpInside" id="9O1-zF-paK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MIN-ie-8XS" secondAttribute="trailing" id="A6i-RK-dhY"/>
+                            <constraint firstItem="dpn-9A-3xn" firstAttribute="top" secondItem="yLq-uZ-8BC" secondAttribute="bottom" constant="16" id="G1s-8c-qTd"/>
+                            <constraint firstItem="MIN-ie-8XS" firstAttribute="leading" secondItem="ajd-bl-U7P" secondAttribute="leading" id="Xpq-kw-WVr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dpn-9A-3xn" secondAttribute="trailing" constant="16" id="Yvj-Jx-E99"/>
+                            <constraint firstItem="MIN-ie-8XS" firstAttribute="top" secondItem="ajd-bl-U7P" secondAttribute="top" id="c4l-tI-VPq"/>
+                            <constraint firstItem="EMi-hz-VbF" firstAttribute="top" secondItem="MIN-ie-8XS" secondAttribute="bottom" id="rM7-xG-PEz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rawVideoFeedView" destination="MIN-ie-8XS" id="jlj-u1-zj2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6E-tL-TdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="-166"/>
+            <point key="canvasLocation" x="1808.8" y="-166.8665667166417"/>
         </scene>
         <!--Train View Controller-->
         <scene sceneID="qOP-xL-YPR">
@@ -95,13 +127,44 @@
                     <view key="view" contentMode="scaleToFill" id="b8D-Gc-Jxd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmC-po-YGa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqm-2d-tOL">
+                                <rect key="frame" x="268" y="36" width="75" height="42"/>
+                                <color key="backgroundColor" red="0.78664340101522845" green="0.11767462423529958" blue="0.0067964286935699794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="NM1-hB-bp4"/>
+                                    <constraint firstAttribute="width" constant="75" id="qp4-Hs-Vs2"/>
+                                </constraints>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="adminButtonPressedWithSender:" destination="rj2-7c-pbS" eventType="touchUpInside" id="P9K-Qm-l71"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dqm-2d-tOL" firstAttribute="top" secondItem="qyI-l8-Blg" secondAttribute="bottom" constant="16" id="Ha6-HR-ixR"/>
+                            <constraint firstItem="XmC-po-YGa" firstAttribute="top" secondItem="b8D-Gc-Jxd" secondAttribute="top" id="IdK-dS-JOX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dqm-2d-tOL" secondAttribute="trailing" constant="16" id="bDU-da-zO3"/>
+                            <constraint firstItem="XmC-po-YGa" firstAttribute="leading" secondItem="b8D-Gc-Jxd" secondAttribute="leading" id="gda-rR-aIv"/>
+                            <constraint firstAttribute="trailing" secondItem="XmC-po-YGa" secondAttribute="trailing" id="nYl-WG-oQm"/>
+                            <constraint firstItem="OMm-QR-8RP" firstAttribute="top" secondItem="XmC-po-YGa" secondAttribute="bottom" id="yT6-UN-bye"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xc6-Xf-GhZ"/>
+                    <connections>
+                        <outlet property="rawVideoFeedView" destination="XmC-po-YGa" id="2AV-Dc-2X5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qc-YK-8GO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="-850"/>
+            <point key="canvasLocation" x="1808.8" y="-850.52473763118451"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="omW-sD-9St">
