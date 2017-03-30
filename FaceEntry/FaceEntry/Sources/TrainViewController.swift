@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TrainViewController.swift
 //  FaceEntry
 //
 //  Created by Keith Moon on 29/03/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TrainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 

@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		2FE521BB1E8B416300CB2BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE521BA1E8B416300CB2BF3 /* AppDelegate.swift */; };
-		2FE521BD1E8B416300CB2BF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE521BC1E8B416300CB2BF3 /* ViewController.swift */; };
 		2FE521C01E8B416300CB2BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE521BE1E8B416300CB2BF3 /* Main.storyboard */; };
 		2FE521C21E8B416300CB2BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE521C11E8B416300CB2BF3 /* Assets.xcassets */; };
 		2FE521C51E8B416300CB2BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE521C31E8B416300CB2BF3 /* LaunchScreen.storyboard */; };
+		2FE521FD1E8C8AB800CB2BF3 /* IdentifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE521FC1E8C8AB800CB2BF3 /* IdentifyViewController.swift */; };
+		2FE521FF1E8C8B5D00CB2BF3 /* ModeChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE521FE1E8C8B5D00CB2BF3 /* ModeChoiceViewController.swift */; };
+		2FE522021E8C8BA000CB2BF3 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE522011E8C8BA000CB2BF3 /* TrainViewController.swift */; };
 		AE37EF35670E8419D8A71A2C /* libPods-FaceEntry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2428B3EDB9B7FAC268872A2 /* libPods-FaceEntry.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FE521B71E8B416300CB2BF3 /* FaceEntry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceEntry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE521BA1E8B416300CB2BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FE521BC1E8B416300CB2BF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2FE521BF1E8B416300CB2BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FE521C11E8B416300CB2BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE521C41E8B416300CB2BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FE521C61E8B416300CB2BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE521FC1E8C8AB800CB2BF3 /* IdentifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdentifyViewController.swift; path = Sources/IdentifyViewController.swift; sourceTree = "<group>"; };
+		2FE521FE1E8C8B5D00CB2BF3 /* ModeChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModeChoiceViewController.swift; path = Sources/ModeChoiceViewController.swift; sourceTree = "<group>"; };
+		2FE522011E8C8BA000CB2BF3 /* TrainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainViewController.swift; path = Sources/TrainViewController.swift; sourceTree = "<group>"; };
 		4D9F486384E8B7EBC10ECECA /* Pods-FaceEntry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceEntry.release.xcconfig"; path = "../Pods/Target Support Files/Pods-FaceEntry/Pods-FaceEntry.release.xcconfig"; sourceTree = "<group>"; };
 		D2428B3EDB9B7FAC268872A2 /* libPods-FaceEntry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaceEntry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60355CC16A17821AE0498A1 /* Pods-FaceEntry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceEntry.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-FaceEntry/Pods-FaceEntry.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,14 +65,24 @@
 		2FE521B91E8B416300CB2BF3 /* FaceEntry */ = {
 			isa = PBXGroup;
 			children = (
+				2FE522001E8C8B7A00CB2BF3 /* Controllers */,
 				2FE521BA1E8B416300CB2BF3 /* AppDelegate.swift */,
-				2FE521BC1E8B416300CB2BF3 /* ViewController.swift */,
 				2FE521BE1E8B416300CB2BF3 /* Main.storyboard */,
 				2FE521C11E8B416300CB2BF3 /* Assets.xcassets */,
 				2FE521C31E8B416300CB2BF3 /* LaunchScreen.storyboard */,
 				2FE521C61E8B416300CB2BF3 /* Info.plist */,
 			);
 			path = FaceEntry;
+			sourceTree = "<group>";
+		};
+		2FE522001E8C8B7A00CB2BF3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2FE522011E8C8BA000CB2BF3 /* TrainViewController.swift */,
+				2FE521FC1E8C8AB800CB2BF3 /* IdentifyViewController.swift */,
+				2FE521FE1E8C8B5D00CB2BF3 /* ModeChoiceViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		51D2E3ADE395CC957EB92890 /* Frameworks */ = {
@@ -212,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FE521BD1E8B416300CB2BF3 /* ViewController.swift in Sources */,
+				2FE521FF1E8C8B5D00CB2BF3 /* ModeChoiceViewController.swift in Sources */,
+				2FE522021E8C8BA000CB2BF3 /* TrainViewController.swift in Sources */,
 				2FE521BB1E8B416300CB2BF3 /* AppDelegate.swift in Sources */,
+				2FE521FD1E8C8AB800CB2BF3 /* IdentifyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +397,7 @@
 				2FE521CB1E8B416300CB2BF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
