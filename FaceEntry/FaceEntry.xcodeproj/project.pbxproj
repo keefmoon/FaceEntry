@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2732B61E8EECD5004168F0 /* CMSampleBuffer+CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2732B51E8EECD5004168F0 /* CMSampleBuffer+CIImage.swift */; };
+		2F2732BA1E901400004168F0 /* FaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2732B91E9013FF004168F0 /* FaceManager.swift */; };
 		2F81332A1E8C8D280063884E /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8133291E8C8D280063884E /* FrameExtractor.swift */; };
 		2F81332D1E8C8F160063884E /* VideoCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81332C1E8C8F160063884E /* VideoCaptureViewController.swift */; };
-		2FE521BB1E8B416300CB2BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE521BA1E8B416300CB2BF3 /* AppDelegate.swift */; };
+		2F8133331E8CDA2F0063884E /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8133321E8CDA2F0063884E /* APIKey.swift */; };
+		2F8133391E8CDC2D0063884E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8133381E8CDC2D0063884E /* AppDelegate.swift */; };
+		2F81333B1E8CE0DF0063884E /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81333A1E8CE0DF0063884E /* Angle.swift */; };
+		2F81333E1E8CE11F0063884E /* FilterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81333D1E8CE11F0063884E /* FilterBuilder.swift */; };
 		2FE521C01E8B416300CB2BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE521BE1E8B416300CB2BF3 /* Main.storyboard */; };
 		2FE521C21E8B416300CB2BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE521C11E8B416300CB2BF3 /* Assets.xcassets */; };
 		2FE521C51E8B416300CB2BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE521C31E8B416300CB2BF3 /* LaunchScreen.storyboard */; };
@@ -20,10 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F2732B51E8EECD5004168F0 /* CMSampleBuffer+CIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CMSampleBuffer+CIImage.swift"; path = "Sources/CMSampleBuffer+CIImage.swift"; sourceTree = "<group>"; };
+		2F2732B91E9013FF004168F0 /* FaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceManager.swift; path = Sources/FaceManager.swift; sourceTree = "<group>"; };
 		2F8133291E8C8D280063884E /* FrameExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FrameExtractor.swift; path = Sources/FrameExtractor.swift; sourceTree = "<group>"; };
 		2F81332C1E8C8F160063884E /* VideoCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCaptureViewController.swift; path = Sources/VideoCaptureViewController.swift; sourceTree = "<group>"; };
+		2F8133321E8CDA2F0063884E /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIKey.swift; path = Sources/APIKey.swift; sourceTree = "<group>"; };
+		2F8133341E8CDC140063884E /* FaceEntry-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceEntry-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F8133381E8CDC2D0063884E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = "<group>"; };
+		2F81333A1E8CE0DF0063884E /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Angle.swift; path = Sources/Angle.swift; sourceTree = "<group>"; };
+		2F81333D1E8CE11F0063884E /* FilterBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterBuilder.swift; path = Sources/FilterBuilder.swift; sourceTree = "<group>"; };
 		2FE521B71E8B416300CB2BF3 /* FaceEntry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceEntry.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FE521BA1E8B416300CB2BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FE521BF1E8B416300CB2BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FE521C11E8B416300CB2BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE521C41E8B416300CB2BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,15 +70,27 @@
 		2F81332E1E8C90370063884E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2F2732B51E8EECD5004168F0 /* CMSampleBuffer+CIImage.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		2F81332F1E8C90520063884E /* Auth */ = {
+		2F81332F1E8C90520063884E /* API Key */ = {
 			isa = PBXGroup;
 			children = (
+				2F8133321E8CDA2F0063884E /* APIKey.swift */,
 			);
-			name = Auth;
+			name = "API Key";
+			sourceTree = "<group>";
+		};
+		2F81333C1E8CE0E60063884E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2F81333D1E8CE11F0063884E /* FilterBuilder.swift */,
+				2F81333A1E8CE0DF0063884E /* Angle.swift */,
+				2F2732B91E9013FF004168F0 /* FaceManager.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		2FE521AE1E8B416300CB2BF3 = {
@@ -91,11 +114,13 @@
 		2FE521B91E8B416300CB2BF3 /* FaceEntry */ = {
 			isa = PBXGroup;
 			children = (
-				2F81332F1E8C90520063884E /* Auth */,
+				2F8133381E8CDC2D0063884E /* AppDelegate.swift */,
+				2F81333C1E8CE0E60063884E /* Helpers */,
+				2F81332F1E8C90520063884E /* API Key */,
 				2F81332E1E8C90370063884E /* Extensions */,
 				2F81332B1E8C8D340063884E /* ImageCapture */,
 				2FE522001E8C8B7A00CB2BF3 /* Controllers */,
-				2FE521BA1E8B416300CB2BF3 /* AppDelegate.swift */,
+				2F8133341E8CDC140063884E /* FaceEntry-Bridging-Header.h */,
 				2FE521BE1E8B416300CB2BF3 /* Main.storyboard */,
 				2FE521C11E8B416300CB2BF3 /* Assets.xcassets */,
 				2FE521C31E8B416300CB2BF3 /* LaunchScreen.storyboard */,
@@ -168,6 +193,7 @@
 					2FE521B61E8B416300CB2BF3 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = YAXJZJ267E;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -256,12 +282,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8133391E8CDC2D0063884E /* AppDelegate.swift in Sources */,
 				2FE521FF1E8C8B5D00CB2BF3 /* ModeChoiceViewController.swift in Sources */,
+				2F2732BA1E901400004168F0 /* FaceManager.swift in Sources */,
+				2F8133331E8CDA2F0063884E /* APIKey.swift in Sources */,
+				2F2732B61E8EECD5004168F0 /* CMSampleBuffer+CIImage.swift in Sources */,
 				2FE522021E8C8BA000CB2BF3 /* TrainViewController.swift in Sources */,
 				2F81332D1E8C8F160063884E /* VideoCaptureViewController.swift in Sources */,
-				2FE521BB1E8B416300CB2BF3 /* AppDelegate.swift in Sources */,
+				2F81333B1E8CE0DF0063884E /* Angle.swift in Sources */,
 				2FE521FD1E8C8AB800CB2BF3 /* IdentifyViewController.swift in Sources */,
 				2F81332A1E8C8D280063884E /* FrameExtractor.swift in Sources */,
+				2F81333E1E8CE11F0063884E /* FilterBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,11 +418,14 @@
 			baseConfigurationReference = F60355CC16A17821AE0498A1 /* Pods-FaceEntry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YAXJZJ267E;
 				INFOPLIST_FILE = FaceEntry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keefmoon.FaceEntry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceEntry/FaceEntry-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -401,11 +435,13 @@
 			baseConfigurationReference = 4D9F486384E8B7EBC10ECECA /* Pods-FaceEntry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YAXJZJ267E;
 				INFOPLIST_FILE = FaceEntry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keefmoon.FaceEntry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FaceEntry/FaceEntry-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
