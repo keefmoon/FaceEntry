@@ -16,6 +16,11 @@ class IdentifyViewController: VideoCaptureViewController {
     }
     
     @IBOutlet var padlockButton: UIButton!
+    @IBOutlet var spinnerView: UIView! {
+        didSet {
+            spinnerView.isHidden = true
+        }
+    }
     override var previewImageView: UIImageView! {
         didSet {
             previewImageView.layer.borderWidth = 2
@@ -35,7 +40,12 @@ class IdentifyViewController: VideoCaptureViewController {
         
         tryToUnlockEnabled = false
         
+        spinnerView.isHidden = false
         faceManager.identify(imageData: imageData, in: group) { [weak self] result in
+            
+            defer {
+                self?.spinnerView.isHidden = true
+            }
             
             switch result {
                 

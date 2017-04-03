@@ -30,7 +30,6 @@ class ModeChoiceViewController: UIViewController {
     let faceDetector = CIDetector(ofType: CIDetectorTypeFace,
                                   context: CIContext(),
                                   options: [CIDetectorAccuracy: CIDetectorAccuracyHigh])
-    let facePersistenceManager = FacePersistenceManager()
     var context: CIContext!
     var currentState: State = .initial
     

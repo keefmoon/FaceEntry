@@ -22,6 +22,7 @@ class VideoCaptureViewController: UIViewController {
     
     @IBOutlet var rawVideoFeedView: UIView!
     @IBOutlet var previewImageView: UIImageView!
+    @IBOutlet var sobelSwitch: UISwitch!
     
     // MARK: Public Dependancies
     
@@ -142,13 +143,16 @@ extension VideoCaptureViewController: FrameExtractorDelegate {
         //        let crop = builder.cropFilter(cropTo: frame)
         
         // Sobel
-        //        let convolution = builder.convolution3x3Filter()
-        //        let overCompositing = builder.overCompositingFilter()
-        //        let colourPolynomial = builder.colourPolynomialFilter()
+        let convolution = filterBuilder.convolution3x3Filter()
+        let overCompositing = filterBuilder.overCompositingFilter()
+        let colourPolynomial = filterBuilder.colourPolynomialFilter()
         
         // Apply the filters and return image
-        let lastFilter = image ->> rotate //->> crop
-        //let lastFilter = image ->> rotate ->> convolution ->> overCompositing ->> colourPolynomial ->> crop
+        var lastFilter = image ->> rotate //->> crop
+        
+        if sobelSwitch.isOn {
+            lastFilter = lastFilter ->> convolution ->> overCompositing ->> colourPolynomial
+        }
         
         return lastFilter?.outputImage
     }
